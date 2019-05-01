@@ -178,7 +178,7 @@ namespace MySQLCon
         {
             //textBox1.Text = "delete";
             button3.Text = "删除";
-            MessageBox.Show("千万别忘了加where条件哟", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            if(radioButton4.Checked) MessageBox.Show("千万别忘了加where条件哟", "提示", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
         private void ExportExcels(string fileName, DataGridView myDGV)
         {
