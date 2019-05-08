@@ -105,7 +105,7 @@ namespace MySQLCon
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
                     if(radioButton1.Checked)
                     {
-                        cmd.CommandType = CommandType.Text;
+                        cmd.CommandType = CommandType.Text; //设置
                         DataTable dt = new DataTable();    
                         MySqlDataAdapter msda = new MySqlDataAdapter(cmd);
                         msda.Fill(dt);
@@ -239,7 +239,7 @@ namespace MySQLCon
         {
             if (dataGridView1.Rows.Count == 0)
             {
-                MessageBox.Show("啊呀导出失败了，没有数据哟！", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("啊呀导出失败了!", "没有数据哟！", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
