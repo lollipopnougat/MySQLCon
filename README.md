@@ -37,4 +37,4 @@ Ver 2.0.0.1
 * 连接mysql数据库前需要先确保mysql服务已经启动
 * 密码如果没有，留空即可
 * 若已经启动了服务但数据库仍无法连接，请检查你数据库用户的远程连接设置
-* 要求 .NET Framework 4.6版本及以上，没有安装可以到[这里](http://download.microsoft.com/download/1/4/A/14A6C422-0D3C-4811-A31F-5EF91A83C368/NDP46-KB3045560-Web.exe)下载(不支持XP)
+* 要求 .NET Framework 4.6版本及以上，没有安装(Windows 10已经自带无需安装)可以到[这里](http://download.microsoft.com/download/1/4/A/14A6C422-0D3C-4811-A31F-5EF91A83C368/NDP46-KB3045560-Web.exe)下载(不支持XP)
