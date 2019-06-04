@@ -6,6 +6,16 @@
 提供了最基本的MySQL数据库查询、修改、插入、删除等功能
 采用.NET framework 4.6 开发
 
+#### 运行示例
+
+##### 登录界面
+
+![登录界面](https://cdn.jsdelivr.net/gh/lollipopnougat/website-calculator/img/mysqlvs2.png)
+
+##### 主界面
+
+![登录界面](https://cdn.jsdelivr.net/gh/lollipopnougat/website-calculator/img/mysqlvs3.png)
+
 #### 开发历程
 
 * 2019-4-24 下午看了`MySQL.data.dll`的说明文档，确定使用C# WinForm开发
@@ -27,7 +37,7 @@ Ver 2.0.0.1
 请使用VS2017或更新版本直接打开sln文件(VS要安装了.NET桌面开发功能负载)，运行还要添加`mysql.data.dll`的引用，需要手动设置，
 `mysql.data.dll`文件可以到[这里](https://dev.mysql.com/downloads/windows/visualstudio/)下载，
 在页面底部有个**Windows (x86, 32-bit), ZIP Archive**文件，下载后解压，
-打开此VS项目解决方案，在项目中添加引用，在弹出的引用管理器中选择-**浏览**，然后找到刚刚解压的文件夹，
+打开此VS项目解决方案，在项目中添加引用，在弹出的引用管理器中选择-**浏览**，然后找到刚刚解压的文件夹，![添加引用](https://cdn.jsdelivr.net/gh/lollipopnougat/website-calculator/img/mysqlvs1.png)
 进入.NET 4.6目录下找到`mysql.data.dll`，添加即可。此时点击VS工具栏的启动按钮应该可以运行了
 
 
