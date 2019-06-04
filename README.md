@@ -16,6 +16,14 @@
 
 ![登录界面](https://cdn.jsdelivr.net/gh/lollipopnougat/website-calculator/img/mysqlvs3.png)
 
+##### 选项界面
+
+![登录界面](https://cdn.jsdelivr.net/gh/lollipopnougat/website-calculator/img/mysqlvs4.png)
+
+##### 关于界面
+
+![登录界面](https://cdn.jsdelivr.net/gh/lollipopnougat/website-calculator/img/mysqlvs5.png)
+
 #### 开发历程
 
 * 2019-4-24 下午看了`MySQL.data.dll`的说明文档，确定使用C# WinForm开发
