@@ -10,19 +10,19 @@
 
 ##### 登录界面
 
-![登录界面](https://cdn.jsdelivr.net/gh/lollipopnougat/website-calculator/img/mysqlvs2.png)
+![登录界面](https://lollipopnougat.github.io/website-calculator/img/mysqlvs2.png)
 
 ##### 主界面
 
-![登录界面](https://cdn.jsdelivr.net/gh/lollipopnougat/website-calculator/img/mysqlvs3.png)
+![主界面](https://lollipopnougat.github.io/website-calculator/img/mysqlvs3.png)
 
-##### 选项界面
+##### 选项菜单界面
 
-![登录界面](https://cdn.jsdelivr.net/gh/lollipopnougat/website-calculator/img/mysqlvs5.png)
+![选项菜单](https://lollipopnougat.github.io/website-calculator/img/mysqlvs5.png)
 
 ##### 关于界面
 
-![登录界面](https://cdn.jsdelivr.net/gh/lollipopnougat/website-calculator/img/mysqlvs4.png)
+![关于界面](https://lollipopnougat.github.io/website-calculator/img/mysqlvs4.png)
 
 #### 开发历程
 
