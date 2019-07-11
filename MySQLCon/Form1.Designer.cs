@@ -37,12 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.文件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.修改数据库连接ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.导出当前结果到EXCELToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.联系作者ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.关于此程序ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button4 = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -52,6 +47,12 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.修改数据库连接ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.导出当前结果到EXCELToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.联系作者ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.关于此程序ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.查询结果全屏显示ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -66,6 +67,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 102);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.Size = new System.Drawing.Size(869, 531);
             this.dataGridView1.TabIndex = 0;
@@ -74,7 +76,7 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(567, 3);
+            this.button1.Location = new System.Drawing.Point(563, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 39);
             this.button1.TabIndex = 1;
@@ -86,7 +88,7 @@
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(723, 3);
+            this.button2.Location = new System.Drawing.Point(721, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(142, 39);
             this.button2.TabIndex = 2;
@@ -99,9 +101,9 @@
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.BackColor = System.Drawing.Color.Salmon;
             this.button3.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(715, 7);
+            this.button3.Location = new System.Drawing.Point(705, 7);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(142, 51);
+            this.button3.Size = new System.Drawing.Size(158, 51);
             this.button3.TabIndex = 3;
             this.button3.Text = "查询";
             this.button3.UseVisualStyleBackColor = false;
@@ -115,7 +117,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(508, 59);
+            this.textBox1.Size = new System.Drawing.Size(505, 59);
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "数据库未连接";
             // 
@@ -125,7 +127,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label1.Location = new System.Drawing.Point(246, 7);
+            this.label1.Location = new System.Drawing.Point(243, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(158, 31);
             this.label1.TabIndex = 5;
@@ -148,35 +150,12 @@
             // 
             this.文件ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.修改数据库连接ToolStripMenuItem,
+            this.查询结果全屏显示ToolStripMenuItem,
             this.导出当前结果到EXCELToolStripMenuItem,
             this.退出ToolStripMenuItem});
             this.文件ToolStripMenuItem.Name = "文件ToolStripMenuItem";
-            this.文件ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.文件ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.文件ToolStripMenuItem.Text = "选项";
-            // 
-            // 修改数据库连接ToolStripMenuItem
-            // 
-            this.修改数据库连接ToolStripMenuItem.Image = global::MySQLCon.Properties.Resources.disconnected;
-            this.修改数据库连接ToolStripMenuItem.Name = "修改数据库连接ToolStripMenuItem";
-            this.修改数据库连接ToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
-            this.修改数据库连接ToolStripMenuItem.Text = "修改数据库连接";
-            this.修改数据库连接ToolStripMenuItem.Click += new System.EventHandler(this.修改数据库连接ToolStripMenuItem_Click);
-            // 
-            // 导出当前结果到EXCELToolStripMenuItem
-            // 
-            this.导出当前结果到EXCELToolStripMenuItem.Image = global::MySQLCon.Properties.Resources.excel;
-            this.导出当前结果到EXCELToolStripMenuItem.Name = "导出当前结果到EXCELToolStripMenuItem";
-            this.导出当前结果到EXCELToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
-            this.导出当前结果到EXCELToolStripMenuItem.Text = "导出当前结果到EXCEL";
-            this.导出当前结果到EXCELToolStripMenuItem.Click += new System.EventHandler(this.导出当前结果到EXCELToolStripMenuItem_Click);
-            // 
-            // 退出ToolStripMenuItem
-            // 
-            this.退出ToolStripMenuItem.Image = global::MySQLCon.Properties.Resources.exit;
-            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(233, 26);
-            this.退出ToolStripMenuItem.Text = "退出";
-            this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
             // 关于ToolStripMenuItem
             // 
@@ -184,30 +163,14 @@
             this.联系作者ToolStripMenuItem,
             this.关于此程序ToolStripMenuItem});
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.关于ToolStripMenuItem.Text = "关于";
-            // 
-            // 联系作者ToolStripMenuItem
-            // 
-            this.联系作者ToolStripMenuItem.Image = global::MySQLCon.Properties.Resources.email;
-            this.联系作者ToolStripMenuItem.Name = "联系作者ToolStripMenuItem";
-            this.联系作者ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.联系作者ToolStripMenuItem.Text = "联系作者";
-            this.联系作者ToolStripMenuItem.Click += new System.EventHandler(this.联系作者ToolStripMenuItem_Click);
-            // 
-            // 关于此程序ToolStripMenuItem
-            // 
-            this.关于此程序ToolStripMenuItem.Image = global::MySQLCon.Properties.Resources.information;
-            this.关于此程序ToolStripMenuItem.Name = "关于此程序ToolStripMenuItem";
-            this.关于此程序ToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.关于此程序ToolStripMenuItem.Text = "关于此程序";
-            this.关于此程序ToolStripMenuItem.Click += new System.EventHandler(this.关于此程序ToolStripMenuItem_Click);
             // 
             // button4
             // 
             this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(416, 3);
+            this.button4.Location = new System.Drawing.Point(412, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(140, 39);
             this.button4.TabIndex = 7;
@@ -222,7 +185,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.16867F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 149F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 156F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
             this.tableLayoutPanel2.Controls.Add(this.button2, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.button1, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.button4, 2, 0);
@@ -251,7 +214,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.06065F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.93935F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 169F));
             this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 0);
@@ -271,14 +234,14 @@
             this.tableLayoutPanel3.Controls.Add(this.radioButton2, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.radioButton3, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.radioButton4, 1, 1);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(517, 3);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(514, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(183, 59);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(182, 59);
             this.tableLayoutPanel3.TabIndex = 5;
             // 
             // radioButton1
@@ -288,7 +251,7 @@
             this.radioButton1.Checked = true;
             this.radioButton1.Enabled = false;
             this.radioButton1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton1.Location = new System.Drawing.Point(15, 3);
+            this.radioButton1.Location = new System.Drawing.Point(14, 3);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(60, 24);
             this.radioButton1.TabIndex = 0;
@@ -303,7 +266,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Enabled = false;
             this.radioButton2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton2.Location = new System.Drawing.Point(106, 3);
+            this.radioButton2.Location = new System.Drawing.Point(105, 3);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(60, 24);
             this.radioButton2.TabIndex = 1;
@@ -317,7 +280,7 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Enabled = false;
             this.radioButton3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton3.Location = new System.Drawing.Point(15, 34);
+            this.radioButton3.Location = new System.Drawing.Point(14, 34);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(60, 22);
             this.radioButton3.TabIndex = 2;
@@ -331,13 +294,62 @@
             this.radioButton4.AutoSize = true;
             this.radioButton4.Enabled = false;
             this.radioButton4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButton4.Location = new System.Drawing.Point(106, 34);
+            this.radioButton4.Location = new System.Drawing.Point(105, 34);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(60, 22);
             this.radioButton4.TabIndex = 3;
             this.radioButton4.Text = "删除";
             this.radioButton4.UseVisualStyleBackColor = true;
             this.radioButton4.CheckedChanged += new System.EventHandler(this.RadioButton4_CheckedChanged);
+            // 
+            // 修改数据库连接ToolStripMenuItem
+            // 
+            this.修改数据库连接ToolStripMenuItem.Image = global::MySQLCon.Properties.Resources.disconnected;
+            this.修改数据库连接ToolStripMenuItem.Name = "修改数据库连接ToolStripMenuItem";
+            this.修改数据库连接ToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
+            this.修改数据库连接ToolStripMenuItem.Text = "修改数据库连接";
+            this.修改数据库连接ToolStripMenuItem.Click += new System.EventHandler(this.修改数据库连接ToolStripMenuItem_Click);
+            // 
+            // 导出当前结果到EXCELToolStripMenuItem
+            // 
+            this.导出当前结果到EXCELToolStripMenuItem.Image = global::MySQLCon.Properties.Resources.excel;
+            this.导出当前结果到EXCELToolStripMenuItem.Name = "导出当前结果到EXCELToolStripMenuItem";
+            this.导出当前结果到EXCELToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
+            this.导出当前结果到EXCELToolStripMenuItem.Text = "导出当前结果到EXCEL";
+            this.导出当前结果到EXCELToolStripMenuItem.Click += new System.EventHandler(this.导出当前结果到EXCELToolStripMenuItem_Click);
+            // 
+            // 退出ToolStripMenuItem
+            // 
+            this.退出ToolStripMenuItem.Image = global::MySQLCon.Properties.Resources.exit;
+            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
+            this.退出ToolStripMenuItem.Text = "退出";
+            this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
+            // 
+            // 联系作者ToolStripMenuItem
+            // 
+            this.联系作者ToolStripMenuItem.Image = global::MySQLCon.Properties.Resources.email;
+            this.联系作者ToolStripMenuItem.Name = "联系作者ToolStripMenuItem";
+            this.联系作者ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.联系作者ToolStripMenuItem.Text = "联系作者";
+            this.联系作者ToolStripMenuItem.Click += new System.EventHandler(this.联系作者ToolStripMenuItem_Click);
+            // 
+            // 关于此程序ToolStripMenuItem
+            // 
+            this.关于此程序ToolStripMenuItem.Image = global::MySQLCon.Properties.Resources.information;
+            this.关于此程序ToolStripMenuItem.Name = "关于此程序ToolStripMenuItem";
+            this.关于此程序ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.关于此程序ToolStripMenuItem.Text = "关于此程序";
+            this.关于此程序ToolStripMenuItem.Click += new System.EventHandler(this.关于此程序ToolStripMenuItem_Click);
+            // 
+            // 查询结果全屏显示ToolStripMenuItem
+            // 
+            this.查询结果全屏显示ToolStripMenuItem.Checked = true;
+            this.查询结果全屏显示ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.查询结果全屏显示ToolStripMenuItem.Name = "查询结果全屏显示ToolStripMenuItem";
+            this.查询结果全屏显示ToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
+            this.查询结果全屏显示ToolStripMenuItem.Text = "查询结果全屏显示";
+            this.查询结果全屏显示ToolStripMenuItem.Click += new System.EventHandler(this.查询结果全屏显示ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -395,6 +407,7 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.ToolStripMenuItem 导出当前结果到EXCELToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 查询结果全屏显示ToolStripMenuItem;
     }
 }
 

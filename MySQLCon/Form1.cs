@@ -109,8 +109,18 @@ namespace MySQLCon
                         DataTable dt = new DataTable();    
                         MySqlDataAdapter msda = new MySqlDataAdapter(cmd);
                         msda.Fill(dt);
+                        if(查询结果全屏显示ToolStripMenuItem.Checked == true)
+                        {
+                            Form3 fm3 = new Form3(dt);
+                            fm3.ShowDialog();
+                        }
                         dataGridView1.DataSource = dt;
                         label2.Text = "查询完毕";
+                        
+                        //int result = cmd.ExecuteNonQuery();
+                        //label2.Text = $"修改了 {result} 行数据";
+                        
+
                     }
                     else
                     {
@@ -247,6 +257,12 @@ namespace MySQLCon
                 ExportExcels(name, dataGridView1);
             }
             
+        }
+
+        private void 查询结果全屏显示ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(查询结果全屏显示ToolStripMenuItem.Checked) 查询结果全屏显示ToolStripMenuItem.Checked = false;
+            else 查询结果全屏显示ToolStripMenuItem.Checked = true;
         }
     }
 }

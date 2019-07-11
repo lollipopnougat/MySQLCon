@@ -43,8 +43,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label7 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -230,17 +230,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(526, 353);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label7.Location = new System.Drawing.Point(114, 358);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(291, 20);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "提示：您可以使用Tab键快速移动输入焦点";
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.BackColor = System.Drawing.Color.SkyBlue;
@@ -253,6 +242,17 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(520, 76);
             this.tableLayoutPanel3.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label7.Location = new System.Drawing.Point(114, 358);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(291, 20);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "提示：您可以使用Tab键快速移动输入焦点";
             // 
             // Form2
             // 
@@ -267,7 +267,7 @@
             this.MinimumSize = new System.Drawing.Size(534, 429);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = " 登陆";
+            this.Text = "登录";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
